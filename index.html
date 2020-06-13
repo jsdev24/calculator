@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    
+    <div class="calculator">
+        <input class="calculator-screen" id="display" type="text" value="" disabled>
+        <div class="inputs">
+            <div class="row">
+                <button onclick="allClear()" class="button">AC</button>
+                <button onclick="clearChar()" class="button">C</button>
+                <button onclick="btnPressed(this)" class="button opr">/</button>
+                <button onclick="btnPressed(this)" class="button opr">*</button>
+            </div>
+
+            <div class="row">
+                <button onclick="btnPressed(this)" class="button" >7</button>
+                <button onclick="btnPressed(this)" class="button">8</button>
+                <button onclick="btnPressed(this)" class="button">9</button>
+                <button onclick="btnPressed(this)" class="button opr">-</button>
+            </div>
+
+            <div class="row">
+                <button onclick="btnPressed(this)" class="button">4</button>
+                <button onclick="btnPressed(this)" class="button">5</button>
+                <button onclick="btnPressed(this)" class="button">6</button>
+                <button onclick="btnPressed(this)" class="button opr">+</button>
+            </div>
+
+            <div class="row">
+                <button onclick="result()" class="button equal">=</button>
+            </div>
+
+            <div class="row">
+                <button onclick="btnPressed(this)" class="button">1</button>
+                <button onclick="btnPressed(this)" class="button">2</button>
+                <button onclick="btnPressed(this)" class="button">3</button>
+                <button onclick="btnPressed(this)" class="button zero">0</button>
+                <button onclick="btnPressed(this)" class="button">.</button>
+            </div>
+        </div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
